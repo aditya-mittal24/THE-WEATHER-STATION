@@ -1,0 +1,27 @@
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    $("body").css("background-image", "url(https://picsum.photos/" + w + "/" + h + "/)");
+    setInterval(function () {
+        const today = new Date();
+        let hours = today.getHours();
+        const minutes = today.getMinutes();
+        const seconds = today.getSeconds();
+        if (hours > 12) { hours = hours - 12; }
+        let time = "";
+        if (hours<10) {time = "0" + hours;}
+        else {time = time + hours;}
+        if (minutes<10) {time = time + ":0" + minutes;}
+        else {time = time + ":" + minutes;}
+        //if (seconds<10) {time = time +  ":0" + seconds;}
+        //else {time = time  + ":" + seconds;}
+        $(".time").html(time);
+    }, 1000);
+</script>
+
+</html>

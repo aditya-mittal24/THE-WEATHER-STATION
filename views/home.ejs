@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs'); %>
+
+    <div class="search-page">
+        <h1 class="time"> </h1>
+        <h1> <%= date %>  </h1>
+        <form autocomplete="off" action="/" method="post">
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text"><span
+                    class="material-symbols-outlined">
+                    search
+                </span></span>
+                <input id="cityInput" name="cityName" type="text" class="form-control" placeholder="City Name">
+            </div>
+        </form>
+    </div>
+
+    <%- include('partials/footer.ejs'); %>

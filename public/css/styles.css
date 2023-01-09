@@ -1,0 +1,129 @@
+body {
+    background-repeat:no-repeat;
+    text-align: center;
+}
+
+.time{
+    margin: 0;
+    font-size: 8rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    margin-bottom: 4%;
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: -1%;
+}
+
+.glass-card{
+    position: relative;
+    bottom: 28%;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.266), rgba(255, 255, 255, 0.36));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-left: none;
+    border-radius: 10px;
+    box-shadow: 10px 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.center{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 25%;
+}
+
+.navbar{
+    background-color: transparent;
+    width: 100%;
+    padding: 1% 4%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.266), rgba(255, 255, 255, 0.36));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);    
+    border: 1px solid rgba(255,255,255,0.18);
+    border-left: none;
+    box-shadow: 10px 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.search-page {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.input-group {
+    width: 50%;
+    margin: auto;
+    height: 70px;
+}
+
+.form-control {
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.266), rgba(255, 255, 255, 0.36));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-left: none;
+    box-shadow: 10px 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+input[type=text]:focus{
+    background-color: transparent;
+    color: white;
+    font-size: 1.4rem;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-left: none;
+    box-shadow: 10px 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+::placeholder {
+    font-size: 1.4rem;
+    color: white !important;
+    opacity: 0.8 !important;
+}
+
+.input-group span {
+    width: 90px;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.input-group .input-group-text {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    /* background-color: transparent; */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.266), rgba(255, 255, 255, 0.36));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-right: none;
+    box-shadow: 10px 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+@media(max-width: 850px){
+    .glass-card{
+        width: 350px;
+        height: 350px;
+    }
+    .input-group{
+        width: 80%;
+    }
+    .input-group span{
+        width: 80px;
+    }
+}
